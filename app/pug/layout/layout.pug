@@ -1,0 +1,32 @@
+include ../common/head
+
+	title
+		block title
+body
+	<!--[if lt IE 8]>
+	p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+	<![endif]-->
+	
+	
+	.wrapper
+		.maincontent
+			include ../common/header
+			.content
+				.container
+					block content
+			
+			
+					
+	//- include ../common/footer
+
+	//- // build:js static/js/vendor.min.js
+	//- // bower:js
+	//- // endbower
+	//- // endbuild
+
+	//- // build:js static/js/main.min.js
+	//- script(src="static/js/main.js")
+	//- // endbuild

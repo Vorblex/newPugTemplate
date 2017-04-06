@@ -1,0 +1,37 @@
+{
+  "name": "normalize.sass",
+  "version": "3.0.0",
+  "main": "_normalize.sass",
+  "author": "Levente Kiraly",
+  "homepage": "https://github.com/leventekk/normalize.sass",
+  "authors": [
+    "Levente Kiraly <hello@leventekk.com>"
+  ],
+  "description": "normalize.css sass implementation",
+  "keywords": [
+    "normalize",
+    "frontend",
+    "css",
+    "sass",
+    "scss",
+    "webdevelopment"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "3.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.0",
+    "commit": "40f95fc4557ba12a2b2c69599375eb14db708c29"
+  },
+  "_source": "https://github.com/leventekk/normalize.sass.git",
+  "_target": "^3.0.0",
+  "_originalSource": "normalize.sass",
+  "_direct": true
+}

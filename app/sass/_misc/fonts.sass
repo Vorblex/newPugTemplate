@@ -1,0 +1,42 @@
+@font-face
+	font-family: 'arialregular'
+	src: url('/fonts/arialregular-webfont.woff') format('woff'), url('/fonts/arialregular-webfont.svg#arialregular') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'arialbold'
+	src: url('/fonts/arialbold-webfont.woff') format('woff'), url('/fonts/arialbold-webfont.svg#arialbold') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+
+@font-face
+	font-family: 'arialitalic'
+	src: url('/fonts/arialitalic-webfont.woff') format('woff'), url('/fonts/arialitalic-webfont.svg#arialitalic') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+	font-family: 'als_malinaregular'
+	src: url('/fonts/malina-webfont.woff') format('woff'), url('/fonts/malina-webfont.svg#als_malinaregular') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+
+=arial($style: regular)
+	@if $style == regular
+		font-family: 'arialregular'
+
+	@if $style == bold
+		font-family: 'arialbold'
+
+	@if $style == italic
+		font-family: 'arialitalic'
+
+=milana($style: regular)
+	@if $style == regular
+		font-family: 'als_malinaregular'

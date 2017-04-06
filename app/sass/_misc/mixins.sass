@@ -1,0 +1,44 @@
+// extend
+
+%clearfix
+	zoom: 1
+	&:after,
+	&:before
+		content: ""
+		display: table
+	&:after
+		clear: both
+
+
+
+=inlineblock($valign: top)
+	display: inline-block
+	vertical-align: $valign
+
+
+=box-shadow($params)
+	box-shadow: $params
+	-webkit-box-shadow: $params
+	-moz-box-shadow: $params
+
+//responsive functoin
+
+@function rem($px)
+	@return $px / 16px + 0rem
+
+//media
+=hd
+	@media screen and (max-width: 1200px)
+		@content
+
+=laptop
+	@media screen and (max-width: 992px)
+		@content
+
+=tablet
+	@media screen and (max-width: 768px)
+		@content
+
+=phone
+	@media screen and (max-width: 480px)
+		@content
