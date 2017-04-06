@@ -23,7 +23,7 @@ var options = {
         dest: 'app'
     },
     sass: {
-        src: 'app/sass/**/*.sass',
+        src: 'app/sass/main.sass',
         dest: 'app/css'
     },
     useref: {
@@ -172,7 +172,7 @@ gulp.task('build', function(callback) {
 
 gulp.task('watch', ['browserSync', 'sass', 'pug'], function() {
     gulp.watch(options.pug.src, ['pug']); // Pug
-    gulp.watch(options.sass.src, ['sass']); // Sass
+    gulp.watch('app/sass/**/*.sass', ['sass']); // Sass
     // Reloads the browser whenever HTML or JS files changes
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
