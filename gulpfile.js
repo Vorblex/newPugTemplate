@@ -171,7 +171,7 @@ gulp.task('build', function(callback) {
 // gulp.task('watch', ['array', 'of', 'tasks', 'to', 'complete','before', 'watch'], function (){
 
 gulp.task('watch', ['browserSync', 'sass', 'pug'], function() {
-    gulp.watch(options.pug.src, ['pug']); // Pug
+    gulp.watch('app/pug/**/*.pug', ['pug']); // Pug
     gulp.watch('app/sass/**/*.sass', ['sass']); // Sass
     // Reloads the browser whenever HTML or JS files changes
     gulp.watch('app/*.html', browserSync.reload);
